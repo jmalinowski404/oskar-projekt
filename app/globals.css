@@ -2,32 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+@fontface {
+  font-family: Metropolis;
+  src: url('../public/Metropolis-Regular.otf')
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+}*/
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+#portrait-image {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow:  24px 24px 44px #b1b1b1,
+             -24px -24px 44px #ffffff;
+}
+
+#oferta-tile {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background: #ffffff;
+  -webkit-box-shadow: 5px 5px 26px #666666, -5px -5px 26px #ffffff;
+  box-shadow: 5px 5px 26px #666666, -5px -5px 26px #ffffff;
+}
+
+#text-container {
+  background: #ffffff;
+  -webkit-box-shadow: 5px 5px 26px #666666, -5px -5px 26px #ffffff;
+  box-shadow: 5px 5px 26px #666666, -5px -5px 26px #ffffff;
 }
