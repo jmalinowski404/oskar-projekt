@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
     return (
-        <header className="flex flex-row justify-center items-center fixed gap-64 py-6 z-50 w-full bg-red-500 text-white text-semibold">
+        <header className="flex flex-row justify-center items-center fixed top-0 left-0 right-0 gap-64 py-6 z-50 w-full bg-white text-[#0d6efd] font-semibold">
             <div id="logo-container">
                 <Image 
                     src={'/next.svg'}

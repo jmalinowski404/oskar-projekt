@@ -4,7 +4,7 @@
 
 @fontface {
   font-family: Metropolis;
-  src: url('../public/Metropolis-Regular.otf')
+  src: url('/public/Metropolis-Regular.otf')
 }
 
 :root {
@@ -42,8 +42,13 @@
   box-shadow: 5px 5px 26px #666666, -5px -5px 26px #ffffff;
 }
 
-#text-container {
-  background: #ffffff;
-  -webkit-box-shadow: 5px 5px 26px #666666, -5px -5px 26px #ffffff;
-  box-shadow: 5px 5px 26px #666666, -5px -5px 26px #ffffff;
+.logo {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.divider-line {
+  width: 75%;
+  display: flex;
+  margin: 0 auto;
 }
